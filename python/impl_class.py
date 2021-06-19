@@ -5,15 +5,19 @@
 class Dog:
 
 #create constructor
-def __init__(self,name,month,day, year, speakText):
-    self.name = name
-    self.month = month
-    self.day = day
-    self.year = year
-    self.speakText = speakText
+    def __init__(self,name,month,day, year, speakText):
+        self.name = name
+        self.month = month
+        self.day = day
+        self.year = year
+        self.speakText = speakText
 
 
-
+#create function to capture speak
+    def speak(self):
+        return self.speakText
+    
+#create function 
 
 #create main function
 def main():
