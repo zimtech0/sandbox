@@ -17,10 +17,27 @@ class Dog:
     def speak(self):
         return self.speakText
     
-#create function 
+#create function to get name
+    def get_name(self):
+        return self.name
+
+#create function for bday
+    def birth_date(self):
+        return str(self.month) + "/" + str(self.day) + "/"+ str(self.year)
+#create function for change speak
+    def change_speak(self,bark):
+        self.speakText =  bark
+
+#create a new puppy
+        
 
 #create main function
 def main():
+    boy_dog = Dog("Mesa",5,15,2004, "WOOOOF")
+    girl_dog = Dog("Sequoia",5,6,2004, "barkbark")
+    print(boy_dog.speak())
+    print(girl_dog.speak())
+    
 
 
 
