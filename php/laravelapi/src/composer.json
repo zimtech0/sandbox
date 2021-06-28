@@ -1,0 +1,10 @@
+{
+    "require": {
+        "vlucas/phpdptenv": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
+}
