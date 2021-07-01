@@ -1,8 +1,9 @@
 function fetchData() {
-    fetch("https://reqres.in/api/users")
+   // fetch("https://reqres.in/api/users")
+   fetch("https://jsonplaceholder.typicode.com/users/1/posts")
         .then(response =>{
          if (!response.ok){
-             throw Error("Error: https://jsonplaceholder.typicode.com/users/1/posts");
+             throw Error("ERROR");
 
          }
          return response.json();
