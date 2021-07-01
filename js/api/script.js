@@ -1,6 +1,6 @@
 function fetchData() {
    // fetch("https://reqres.in/api/users")
-   fetch("https://jsonplaceholder.typicode.com/users/1/posts")
+   fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
         .then(response =>{
          if (!response.ok){
              throw Error("ERROR");
@@ -12,7 +12,6 @@ function fetchData() {
          })
          .then(data => {
             console.log(data.data);
-            const html = data.data
              .map(user =>{
                  return `
                  <div class="user">
