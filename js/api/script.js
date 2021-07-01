@@ -22,7 +22,7 @@ function fetchData() {
              })
              .join("");
             console.log(html);
-            document.querySelector("api").insertAdjacentHTML("afterbegin",html);
+            document.querySelector("#app").insertAdjacentHTML("afterbegin",html);
 
         })
         .catch(error => {
